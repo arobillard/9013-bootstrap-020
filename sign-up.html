@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Bike Club</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+  <header class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="./">
+        <strong class="h1">
+          <i class="bi bi-bicycle"></i>
+          The Bike Club
+        </strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+        <ul class="navbar-nav align-items-center gap-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <i class="bi bi-house fs-5 me-2"></i>
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-bicycle fs-5 me-2"></i>
+              Bikes
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-info-circle fs-5 me-2"></i>
+              About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-secondary" href="#">Join Now</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section>
+      <div class="container pt-6 pb-6">
+        <form action="#">
+          <div class="row g-3">
+            <h1 class="col-12">Sign Up</h1>
+            <p class="col-12">Sign up now to receive exclusive member deals and early access to Bike Club events!</p>
+
+            <div class="col-12 col-md-6">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="first-name" name="first-name" placeholder="First Name" value="Adam">
+                <label for="first-name">First Name</label>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="last-name" name="last-name" placeholder="Last Name">
+                <label for="last-name">Last Name</label>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="address-1" name="address-1" placeholder="Address Line 1">
+                <label for="address-1">Address Line 1</label>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="address-2" name="address-2" placeholder="Address Line 2">
+                <label for="address-2">Address Line 2</label>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="city" name="city" placeholder="City">
+                <label for="city">City</label>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-3">
+              <div class="form-floating">
+                <select class="form-select" name="province" id="province">
+                  <option value="Alberta">Alberta</option>
+                  <option value="British Columbia">British Columbia</option>
+                  <option value="Manitoba">Manitoba</option>
+                  <option value="New Brunswick">New Brunswick</option>
+                  <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                  <option value="Northwest Territories">Northwest Territories</option>
+                  <option value="Nova Scotia">Nova Scotia</option>
+                  <option value="Nunavut">Nunavut</option>
+                  <option value="Ontario" selected>Ontario</option>
+                  <option value="Prince Edward Island">Prince Edward Island</option>
+                  <option value="Quebec">Quebec</option>
+                  <option value="Saskatchewan">Saskatchewan</option>
+                  <option value="Yukon">Yukon</option>
+                </select>
+                <label for="province">Province</label>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-3">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="postal-code" name="postal-code" placeholder="Postal Code">
+                <label for="postal-code">Postal Code</label>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="form-floating">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                <label for="email">Email</label>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="form-floating">
+                <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                <label for="password">Password</label>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="permission" name="permission">
+                <label class="form-check-label" for="permission">
+                  By checking, you agree to the <a href="#" class="link-secondary">Terms of Service</a>.
+                </label>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <button type="submit" class="btn btn-secondary btn-lg">Sign Up</button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-800 text-white">
+
+    <div class="container pt-5 pb-5">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <a class="text-decoration-none h2 link-light" href="#">
+            <i class="bi bi-bicycle"></i>
+            The Bike Cub
+          </a>
+        </div>
+        <div class="col-12 col-md-6">
+          <h2>Contact</h2>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a class="d-flex text-decoration-none link-light" href="tel:6131234567">
+                <i class="bi bi-telephone me-2"></i>
+                613-123-4567
+              </a>
+            </li>
+            <li class="mb-2">
+              <a class="d-flex text-decoration-none link-light" href="mailto:hello@thebikeclub.ca">
+                <i class="bi bi-envelope me-2"></i>
+                hello@thebikeclub.ca
+              </a>
+            </li>
+            <li>
+              <a class="d-flex text-decoration-none link-light" href="#">
+                <i class="bi bi-geo-alt me-2"></i>
+                <address>
+                  123 Fake St,<br>
+                  Ottawa, ON K1B 2C3
+                </address>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-900">
+      <!-- .container>.row>.col*2 -->
+      <div class="container pt-3 pb-3">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <small>&copy; 2021 MAD9013</small>
+          </div>
+          <div class="col-12 col-md-6 text-md-end">
+            <a class="link-light" href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
